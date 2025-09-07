@@ -1,0 +1,151 @@
+Started by user Devireddy Nikhitha
+Running as SYSTEM
+Building in workspace C:\Users\nitis\.jenkins\workspace\Capstone_project1
+[Capstone_project1] $ cmd /c call C:\Users\nitis\AppData\Local\Temp\jenkins3624296706853512966.bat
+
+C:\Users\nitis\.jenkins\workspace\Capstone_project1>cd C:\Users\nitis\OneDrive\Desktop\java 24\capstoneproject1 
+
+C:\Users\nitis\OneDrive\Desktop\java 24\capstoneproject1>mvn clean test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< capstoneproject1:capstoneproject1 >------------------
+[INFO] Building capstoneproject1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ capstoneproject1 ---
+[INFO] Deleting C:\Users\nitis\OneDrive\Desktop\java 24\capstoneproject1\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ capstoneproject1 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ capstoneproject1 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ capstoneproject1 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 9 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ capstoneproject1 ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding windows-1252, i.e. build is platform dependent!
+[INFO] Compiling 11 source files with javac [debug target 1.8] to target\test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] /C:/Users/nitis/OneDrive/Desktop/java 24/capstoneproject1/src/test/java/bstack_package/TestRunner.java: C:\Users\nitis\OneDrive\Desktop\java 24\capstoneproject1\src\test\java\bstack_package\TestRunner.java uses or overrides a deprecated API.
+[INFO] /C:/Users/nitis/OneDrive/Desktop/java 24/capstoneproject1/src/test/java/bstack_package/TestRunner.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ capstoneproject1 ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running bstack_package.TestRunner
+
+Scenario: successfull Login to BStack demo     # file:///C:/Users/nitis/OneDrive/Desktop/java%2024/capstoneproject1/src/test/resources/features/0login.feature:2
+Sep 07, 2025 10:37:31 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 10:37:31 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given User is in  BStack demo login page   # bstack_package.bstack_logintest.user_is_in_bstack_demo_login_page()
+  ✔ Then User should be redirected to homepage # bstack_package.bstack_logintest.user_should_be_redirected_to_homepage()
+
+Scenario: Successful product search in BStack demo # file:///C:/Users/nitis/OneDrive/Desktop/java%2024/capstoneproject1/src/test/resources/features/1search.feature:2
+Sep 07, 2025 10:37:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 10:37:45 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given User is on BStack demo home page         # bstack_package.bstack_searchtest.user_is_on_bstack_demo_home_page()
+  ✔ When Enter product name in search bar          # bstack_package.bstack_searchtest.enter_product_name_in_search_bar()
+  ✔ Then Search results should be displayed        # bstack_package.bstack_searchtest.search_results_should_be_displayed()
+
+Scenario: Successfully add a product to cart                     # file:///C:/Users/nitis/OneDrive/Desktop/java%2024/capstoneproject1/src/test/resources/features/2addtocart.feature:2
+Sep 07, 2025 10:37:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 10:37:55 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given User launches BStack demo home page for adding product # bstack_package.bstack_addtocart.user_launches_bstack_demo_home_page_for_adding_product()
+  ✔ When Search for a product in search bar                      # bstack_package.bstack_addtocart.search_for_a_product_in_search_bar()
+  ✔ And Add the product to the cart                              # bstack_package.bstack_addtocart.add_the_product_to_the_cart()
+  ✔ Then Successfully added to cart                              # bstack_package.bstack_addtocart.successfully_added_to_cart()
+
+Scenario: Successfully delete a product from cart     # file:///C:/Users/nitis/OneDrive/Desktop/java%2024/capstoneproject1/src/test/resources/features/3deletefromcart.feature:2
+Sep 07, 2025 10:39:09 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 10:39:09 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given User is on BStack demo home page for delete # bstack_package.bstack_deletefromcart.user_is_on_bstack_demo_home_page_for_delete()
+  ✔ When Search and select a product for delete       # bstack_package.bstack_deletefromcart.search_and_select_a_product_for_delete()
+  ✔ And Add the product to the cart for delete        # bstack_package.bstack_deletefromcart.add_the_product_to_the_cart_for_delete()
+  ✔ And Remove the product from the cart              # bstack_package.bstack_deletefromcart.remove_the_product_from_the_cart()
+  ✔ Then Successfully deleted from cart               # bstack_package.bstack_deletefromcart.successfully_deleted_from_cart()
+
+Scenario: Complete checkout flow               # file:///C:/Users/nitis/OneDrive/Desktop/java%2024/capstoneproject1/src/test/resources/features/4checkout.feature:3
+Sep 07, 2025 10:40:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 10:40:25 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given User opens sign-in page for checkout # bstack_package.bstack_checkout.user_opens_sign_in_page_for_checkout()
+  ✔ When User signs in for checkout            # bstack_package.bstack_checkout.user_signs_in_for_checkout()
+  ✔ And User searches a product to buy         # bstack_package.bstack_checkout.user_searches_a_product_to_buy()
+  ✔ And User adds the product to cart          # bstack_package.bstack_checkout.user_adds_the_product_to_cart()
+  ✔ And User clicks on checkout                # bstack_package.bstack_checkout.user_clicks_on_checkout()
+  ✔ And User provides shipping details         # bstack_package.bstack_checkout.user_provides_shipping_details()
+  ✔ And User submits the checkout form         # bstack_package.bstack_checkout.user_submits_the_checkout_form()
+✅ Order placed successfully!
+  ✔ Then Order should be placed successfully   # bstack_package.bstack_checkout.order_should_be_placed_successfully()
+
+Scenario: View past orders                       # file:///C:/Users/nitis/OneDrive/Desktop/java%2024/capstoneproject1/src/test/resources/features/5orders.feature:2
+Sep 07, 2025 10:40:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 10:40:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given User opens sign-in page to view orders # bstack_package.bstack_orders.user_opens_sign_in_page_to_view_orders()
+  ✔ When User signs in for orders page           # bstack_package.bstack_orders.user_signs_in_for_orders_page()
+  ✔ And User navigates to Orders section         # bstack_package.bstack_orders.user_navigates_to_orders_section()
+  ✔ Then Orders list should be visible           # bstack_package.bstack_orders.orders_list_should_be_visible()
+
+Scenario: Add item to favourites and open favourites page # file:///C:/Users/nitis/OneDrive/Desktop/java%2024/capstoneproject1/src/test/resources/features/6favourites.feature:3
+Sep 07, 2025 10:41:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 10:41:05 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given User opens sign-in page for favourites          # bstack_package.bstack_favourites.user_opens_sign_in_page_for_favourites()
+  ✔ When User signs in to manage favourites               # bstack_package.bstack_favourites.user_signs_in_to_manage_favourites()
+  ✔ And User marks the first product as favourite         # bstack_package.bstack_favourites.user_marks_the_first_product_as_favourite()
+  ✔ And User opens the Favourites page                    # bstack_package.bstack_favourites.user_opens_the_favourites_page()
+  ✔ Then Favourites should display without errors         # bstack_package.bstack_favourites.favourites_should_display_without_errors()
+
+Scenario: Browse offers after login             # file:///C:/Users/nitis/OneDrive/Desktop/java%2024/capstoneproject1/src/test/resources/features/7offers.feature:3
+Sep 07, 2025 10:41:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 10:41:23 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given User opens sign-in page to see offers # bstack_package.bstack_offers.user_opens_sign_in_page_to_see_offers()
+  ✔ When User logs in for offers                # bstack_package.bstack_offers.user_logs_in_for_offers()
+  ✔ And User opens the Offers page              # bstack_package.bstack_offers.user_opens_the_offers_page()
+  ✔ Then Offers content should appear           # bstack_package.bstack_offers.offers_content_should_appear()
+
+Scenario: Logout after successful login         # file:///C:/Users/nitis/OneDrive/Desktop/java%2024/capstoneproject1/src/test/resources/features/8logout.feature:3
+Sep 07, 2025 10:41:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 139
+Sep 07, 2025 10:41:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 139.0.7258.155. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given User opens sign-in page for logout    # bstack_package.bstack_logout.user_opens_sign_in_page_for_logout()
+  ✔ When User signs in to prepare logout        # bstack_package.bstack_logout.user_signs_in_to_prepare_logout()
+  ✔ And User clicks logout action               # bstack_package.bstack_logout.user_clicks_logout_action()
+  ✔ Then User should be logged out successfully # bstack_package.bstack_logout.user_should_be_logged_out_successfully()
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 265.9 s -- in bstack_package.TestRunner
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:32 min
+[INFO] Finished at: 2025-09-07T10:41:54+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
