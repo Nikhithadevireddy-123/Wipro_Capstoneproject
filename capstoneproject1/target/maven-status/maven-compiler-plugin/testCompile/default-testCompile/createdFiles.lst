@@ -1,0 +1,11 @@
+bstack_package\bstack_offers.class
+bstack_package\bstack_checkout.class
+bstack_package\TestRunner.class
+bstack_package\bstack_orders.class
+bstack_package\bstack_searchtest.class
+bstack_package\bstack_logintest.class
+bstack_package\bstack_deletefromcart.class
+bstack_package\Pageclass_bstack.class
+bstack_package\bstack_favourites.class
+bstack_package\bstack_addtocart.class
+bstack_package\bstack_logout.class

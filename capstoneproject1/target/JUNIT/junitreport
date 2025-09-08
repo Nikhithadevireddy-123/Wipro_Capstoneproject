@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="207.263" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-09-08T15:44:07.493259600Z">
+<testcase classname="BStack demo" name="successfull Login to BStack demo" time="14.483">
+<system-out><![CDATA[
+Given User is in  BStack demo login page....................................passed
+Then User should be redirected to homepage..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BStack demo Search" name="Successful product search in BStack demo - #1.1" time="8.843">
+<system-out><![CDATA[
+Given User is on BStack demo home page......................................passed
+When Enter product name "iPhone 12" in search bar...........................passed
+Then Search results should be displayed.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BStack demo Search" name="Successful product search in BStack demo - #1.2" time="7.315">
+<system-out><![CDATA[
+Given User is on BStack demo home page......................................passed
+When Enter product name "Samsung Galaxy S20" in search bar..................passed
+Then Search results should be displayed.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add to Cart" name="Successfully add a product to cart" time="10.116">
+<system-out><![CDATA[
+Given User launches BStack demo home page for adding product................passed
+When User searches product "iPhone 12" to add...............................passed
+And Add the product to the cart.............................................passed
+Then Successfully added to cart.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Delete from Cart" name="Successfully delete a product from cart" time="13.769">
+<system-out><![CDATA[
+Given User is on BStack demo home page for delete...........................passed
+When User searches product "iPhone 12" to delete............................passed
+And Add the product to the cart for delete..................................passed
+And Remove the product from the cart........................................passed
+Then Successfully deleted from cart.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checkout Flow" name="Complete checkout flow with different shipping details - #1.1" time="22.682">
+<system-out><![CDATA[
+Given User opens sign-in page for checkout..................................passed
+When User signs in for checkout.............................................passed
+And User searches product "<productName>" for checkout......................passed
+And User adds the product to cart...........................................passed
+And User clicks on checkout.................................................passed
+And User provides shipping details "huj", "guh", "123 Street", "dehbucde", "90001".passed
+And User submits the checkout form..........................................passed
+Then Order should be placed successfully....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checkout Flow" name="Complete checkout flow with different shipping details - #1.2" time="22.418">
+<system-out><![CDATA[
+Given User opens sign-in page for checkout..................................passed
+When User signs in for checkout.............................................passed
+And User searches product "<productName>" for checkout......................passed
+And User adds the product to cart...........................................passed
+And User clicks on checkout.................................................passed
+And User provides shipping details "fdtt", "jgi", "456 gjbhu", "cbuyeed", "75001".passed
+And User submits the checkout form..........................................passed
+Then Order should be placed successfully....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checkout Flow" name="Complete checkout flow with different shipping details - #1.3" time="22.519">
+<system-out><![CDATA[
+Given User opens sign-in page for checkout..................................passed
+When User signs in for checkout.............................................passed
+And User searches product "<productName>" for checkout......................passed
+And User adds the product to cart...........................................passed
+And User clicks on checkout.................................................passed
+And User provides shipping details "guhj", "gubh", "789 igygh", "byuyu", "33101".passed
+And User submits the checkout form..........................................passed
+Then Order should be placed successfully....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checkout Flow" name="Complete checkout flow with different shipping details - #1.4" time="22.638">
+<system-out><![CDATA[
+Given User opens sign-in page for checkout..................................passed
+When User signs in for checkout.............................................passed
+And User searches product "<productName>" for checkout......................passed
+And User adds the product to cart...........................................passed
+And User clicks on checkout.................................................passed
+And User provides shipping details "gjyu", "tugj", "101 vyutv", "edghvy", "10001".passed
+And User submits the checkout form..........................................passed
+Then Order should be placed successfully....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Orders history" name="View past orders" time="15.367">
+<system-out><![CDATA[
+Given User opens sign-in page to view orders................................passed
+When User signs in for orders page..........................................passed
+And User navigates to Orders section........................................passed
+Then Orders list should be visible..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Favourites management" name="Add item to favourites and open favourites page" time="16.144">
+<system-out><![CDATA[
+Given User opens sign-in page for favourites................................passed
+When User signs in to manage favourites.....................................passed
+And User marks the first product as favourite...............................passed
+And User opens the Favourites page..........................................passed
+Then Favourites should display without errors...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Special offers" name="Browse offers after login" time="15.553">
+<system-out><![CDATA[
+Given User opens sign-in page to see offers.................................passed
+When User logs in for offers................................................passed
+And User opens the Offers page..............................................passed
+Then Offers content should appear...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logout" name="Logout after successful login" time="15.029">
+<system-out><![CDATA[
+Given User opens sign-in page for logout....................................passed
+When User signs in to prepare logout........................................passed
+And User clicks logout action...............................................passed
+Then User should be logged out successfully.................................passed
+]]></system-out>
+</testcase>
+</testsuite>
